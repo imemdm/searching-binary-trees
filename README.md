@@ -1,1 +1,1 @@
-# searching-binary-trees
+# Binary Search Tree implementation and various searching methods
