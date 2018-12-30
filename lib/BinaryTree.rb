@@ -51,6 +51,18 @@ class BinaryTree
     return node
   end
 
+  def self.dfs_rec(tree, value)
+    return nil if tree.nil?
+
+    return tree if tree.data == value
+    
+    if value < tree.data
+      self.dfs_rec(tree.left, value)
+    elsif value > tree.data
+      self.dfs_rec(tree.right, value)
+    end
+  end
+
   private
   def self.insert(node, value)
     if node.nil?
